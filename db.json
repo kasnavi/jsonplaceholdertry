@@ -1,8 +1,118 @@
 {
 	"users": [
 		{
-			"name": "Reza"
+			"id": 1,
+			"username": "Reza",
+			"password": "RezaPassword"
 		}
-	]	
+	],
+	"projects": [
+    {
+      "id": 1,
+      "name": "پروژه مدیریت پروژه ها",
+      "title":"عنوان پروژهی مدیریت پروژه ها",
+      "start_date":"21/8/91",
+      "end_date":"21/8/93",
+      "is_sub_project":"true",
+      "has_ganity_relation":"true",
+      "parent_id": 2
+    },
+    {
+      "id": 2,
+      "name": "2پروژه مدیریت پروژه ها",
+      "title":"2عنوان پروژهی مدیریت پروژه ها",
+      "start_date":"21/9/91",
+      "end_date":"21/9/93",
+      "is_sub_project":"false",
+      "has_ganity_relation":"none",
+      "parent_id": "none"
+    }
+	],
+	"personal_contractor": [
+    {
+      "id": 1,
+      "name": "رضا",
+      "number": "013235",
+      "call_back_number": "12352",
+      "national_id": "12355322225",
+      "birthday": "21/8/71 09:00",
+      "phone_number": "0919353322",
+      "address": "تهران، خیابان آزادی، پلاک ۱۲، زنگ ۲",
+      "details": "",
+      "files": []
+    }
+
+  ],
+  "company_contractor": [
+    {
+      "id": 2,
+      "number": "013235",
+      "manager": "علی نقی",
+      "subject": "IOT",
+      "samta": "12353546423232",
+      "details": "",
+      "files": []
+      
+    }
+
+  ],
+  "inteligent_contractor": [
+    {
+      "id": 3,
+      "national_id": "12355322225",
+      "phone_number": "0919353322",
+      "address": "تهران، خیابان آزادی، پلاک ۱۲، زنگ ۲",
+      "confirm_number": "225474323",
+      "start_num": "243646322",
+      "study": "دیپلم",
+      "university": "شریف",
+      "start": "21/8/99 12:12",
+      "subject": "CE",
+      "details": "",
+      "files": []
+    }
+
+  ],
+  "service_alternative_contractor": [
+    {
+      "id": 4,
+      "national_id": "12355322225",
+      "phone_number": "0919353322",
+      "address": "تهران، خیابان آزادی، پلاک ۱۲، زنگ ۲",
+      "confirm_number": "225474323",
+      "call_back_number": "243646322",
+      "presented_number": "1235643",
+      "start_num": "243646322",
+      "study": "دیپلم",
+      "university": "شریف",
+      "subject": "CE",
+      "details": "",
+      "files": []
+    }
+  ],
+  "contracts": [
+    {
+      "id": 1,
+      "title": "قرار داد انجام پروژه",
+      "employer": 4,
+      "supervisors": 3,
+      "contractor": 2,
+      "project": 2,
+      "price": "12000000",
+      "start_date": "21/8/91",
+      "end_date": "21/9/93",
+      "steps":[
+        {
+          "id": 1,
+          "title": "گام اول",
+          "project": 1,
+          "percentage": 12,
+          "price": 1300000,
+          "start_date": "21/8/91",
+          "end_date": "21/9/93"
+        }
+      ]
+    }
+  ]
 }
 
